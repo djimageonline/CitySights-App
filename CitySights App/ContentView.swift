@@ -14,7 +14,9 @@ struct ContentView: View {
     var body: some View {
         HStack {
             
-            TextField("Waht are you looking for?", text: $query)
+            Text("Nice")
+            
+            TextField("What are you looking for?", text: $query)
                 .textFieldStyle(.roundedBorder)
             
             Button {
