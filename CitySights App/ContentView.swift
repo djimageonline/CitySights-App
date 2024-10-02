@@ -15,6 +15,12 @@ struct ContentView: View {
         HStack {
             
             Text("Nice")
+            Text("Nice")
+            
+            Text("Nice")
+            
+            Text("Nice")
+            
             
             TextField("What are you looking for?", text: $query)
                 .textFieldStyle(.roundedBorder)
