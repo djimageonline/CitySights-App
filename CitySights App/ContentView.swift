@@ -13,15 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         HStack {
-            
-            Text("Nice")
-            Text("Nice")
-            
-            Text("Nice")
-            
-            Text("Nice")
-            
-            
+                        
             TextField("What are you looking for?", text: $query)
                 .textFieldStyle(.roundedBorder)
             
@@ -29,10 +21,16 @@ struct ContentView: View {
 //                To do
             } label: {
                 Text("Go")
+                    .padding(.horizontal)
+                    .padding(.vertical, 10)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
             }
-
         }
         .padding()
+        .onAppear(perform: {
+            print(Bundle.main.infoDictionary?["API_KEY"] as? String)
+        })
     }
 }
 
